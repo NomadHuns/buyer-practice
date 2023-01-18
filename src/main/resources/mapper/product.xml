@@ -10,4 +10,7 @@
    <select id="findById" resultType="shop.mtcoding.buyer.model.Product">
       select * from product_tb where id = #{id}
    </select>
+   <update id="updateQty">
+      UPDATE product_tb SET qty = qty - #{count} where id = #{id}
+   </update>
 </mapper>
