@@ -15,6 +15,7 @@
                 <ul>
                     <li><a href="/">홈</a></li>
                     <li><a href="/login-form">로그인</a></li>
+                    <li><a href="/join-form">회원가입</a></li>
                 </ul>
                 <hr>
                 <br>

@@ -34,4 +34,19 @@ public class UserController {
             return "redirect:/";
         }
     }
+
+    @GetMapping("/join-form")
+    public String joinForm() {
+        return "user/joinForm";
+    }
+
+    @PostMapping("/join")
+    public String join(String username, String password, String email) {
+        int result = userRepository.insertUser(username, password, email);
+        if (result == 1) {
+            return "redirect:/login-form";
+        } else {
+            return "redirect:/join-form";
+        }
+    }
 }
