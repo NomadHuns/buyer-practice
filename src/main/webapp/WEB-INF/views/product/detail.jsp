@@ -10,7 +10,6 @@
                 <th>재고</th>
                 <th>등록일</th>
             </tr>
-            <c:forEach items="${productList}" var="product">
             <tr>
                 <td>${product.id}</td>
                 <td>${product.name}</td>
@@ -18,6 +17,5 @@
                 <td>${product.qty}</td>
                 <td>${product.createdAt}</td>
             </tr>
-            </c:forEach>
         </table>
         <%@ include file="../layout/footer.jsp" %>

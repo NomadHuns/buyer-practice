@@ -8,4 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
 public interface ProductRepository {
 
     public List<Product> findAll();
+
+    public Product findById(int id);
 }

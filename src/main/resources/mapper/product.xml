@@ -7,4 +7,7 @@
    <select id="findAll" resultType="shop.mtcoding.buyer.model.Product">
       select * from product
    </select>
+   <select id="findById" resultType="shop.mtcoding.buyer.model.Product">
+      select * from product where id = #{id}
+   </select>
 </mapper>
