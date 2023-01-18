@@ -14,6 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="/">홈</a></li>
+                    <li><a href="/login-form">로그인</a></li>
                 </ul>
                 <hr>
                 <br>
