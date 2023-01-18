@@ -49,4 +49,11 @@ public class UserController {
             return "redirect:/join-form";
         }
     }
+
+    @GetMapping("/logout")
+    public String logout() {
+        session.removeAttribute("principal");
+        return "redirect:/";
+    
+    }
 }
